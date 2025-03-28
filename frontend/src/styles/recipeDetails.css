@@ -1,0 +1,231 @@
+/* src/styles/RecipeDetails.css */
+
+.recipe-details-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  margin-top: 15px;
+}
+
+.creator-overview {
+  width: 40%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 75vh;
+  margin-left: 68px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.creator-overview h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #333;
+  padding-top: 20px;
+}
+
+
+
+.creator-overview h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #333;
+  padding-top: 20px;
+}
+
+.creator-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creator-head img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.recipe-section {
+  margin-top: -55px;
+  padding-bottom: 35px;
+}
+
+.creator-section {
+  margin-top: -51px;
+}
+
+.recipe-details {
+  margin-right: 66px;
+}
+
+.recipe-details-container .social-media {
+  margin: 15px 0;
+  color: #666;
+}
+
+.recipe-details-container .social-media .share-icon:hover {
+  color: #2D7ABE;
+  cursor: pointer;
+}
+
+.recipe-details-container .creator-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+
+.recipe-details-container .creator-overview h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.recipe-details-container .creator-overview p {
+  margin: 10px 0;
+  text-align: justify;
+  width: 95%;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.no-recipes {
+  color: #666;
+  font-size: 14px;
+}
+
+.recipe-details-container .recipe-details {
+  width: 70%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.recipe-details-container .recipe-details h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.recipe-details .rtype, .rposted {
+  font-size: 14px;
+  padding-bottom: 5px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.recipe-details .rposted {
+  font-size: 14px;
+  padding-bottom: 15px;
+  margin: 5px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+
+.recipe-details h4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.recipe-details p {
+  color: #555;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.recipe-details-container .recipe-details ul,
+.recipe-details-container .recipe-details ol {
+  padding-left: 20px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.recipe-details-container .recipe-details li {
+  padding-bottom: 8px;
+  text-align: justify;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.recipe-details-container .recipe-details ol {
+  list-style-type: decimal;
+}
+
+.main-recipe-image {
+  width: 350px;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.save-btn {
+  font-size: 14px;
+  position: relative;
+  bottom: 110px;
+  right: 15px;
+  float: right;
+ 
+  border-radius: 5px;
+  padding: 8px 15px;
+  width: 80px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.save-btn:hover {
+
+}
+
+.save-icon {
+  position: relative;
+  bottom: 2px;
+  right: 5px;
+  width: 18px;
+  height: auto;
+ 
+}
+
+.recipe-image-container {
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .recipe-details-container {
+    flex-direction: column;
+  }
+  
+  .creator-overview, 
+  .recipe-details {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .save-btn {
+    position: static;
+    float: none;
+    margin-top: 15px;
+  }
+}

@@ -5,7 +5,7 @@ import feature1Image from '../assets/images/feature1.png';
 import feature2Image from '../assets/images/feature2.png';
 import feature3Image from '../assets/images/feature3.png';
 import Carousel from './Carousel'; // Import the Carousel component
-import LatestJobs from './LatestJobs';
+import LatestRecipe from './LatestRecipe';
 import Events from './EventList';
 import section1Image from '../assets/images/section1.jpg';
 import TopHiringCompanies from './TopHiringCompanies';
@@ -51,14 +51,14 @@ function Home() {
 <h2 className="section-title">About Us</h2>
 <section id="about-us">
   <div className="about-container">
-
+  <img src={aboutImage} alt="About JobConnect" class="about-img"/>
     
     <div className="about-text">
       <h3>Our Story</h3>
-      <p>RecipeShare was created with a passion for bringing people together through the joy of cooking. Our platform allows food enthusiasts to share their favorite recipes, discover new dishes, and connect with a global community of home cooks and professional chefs alike.</p>
+      <p>TastyShare was created with a passion for bringing people together through the joy of cooking. Our platform allows food enthusiasts to share their favorite recipes, discover new dishes, and connect with a global community of home cooks and professional chefs alike.</p>
       
       <h3>Our Commitment</h3>
-      <p>At RecipeShare, we are dedicated to inspiring creativity in the kitchen. We provide a space where everyone, from beginners to seasoned chefs, can explore diverse cuisines, share tips, and get personalized recipe recommendations. Our goal is to foster a love for cooking and create a welcoming community of food lovers.</p>
+      <p>At TastyShare, we are dedicated to inspiring creativity in the kitchen. We provide a space where everyone, from beginners to seasoned chefs, can explore diverse cuisines, share tips, and get personalized recipe recommendations. Our goal is to foster a love for cooking and create a welcoming community of food lovers.</p>
       
       <a href="/about" className="learn-more">Learn More</a>
     </div>
@@ -66,7 +66,7 @@ function Home() {
 </section>
 
 
-<LatestJobs />
+<LatestRecipe />
 
 {/* Menu Introduction Section */}
 <section className="menu-introduction">
@@ -86,7 +86,7 @@ function Home() {
       </section>
 
 
-
+      <Events /> 
 
     
 

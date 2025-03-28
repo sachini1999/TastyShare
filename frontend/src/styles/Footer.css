@@ -1,22 +1,21 @@
-
+/* Footer.css - Light Theme */
 footer {
-    
-  background-color: #1c1c1c;
-  padding: 50px 110px; 
+  background-color: #f8f9fa;
+  padding: 50px 110px;
   margin: auto;
-  color: white;
- 
+  color: #333333;
+  border-top: 1px solid #e0e0e0;
 }
 
-#morelabel{ 
-font-family: 'Times New Roman', Times, serif;
-color: white;
-padding-left: 0px;
-border: solid 1px #989696;
-border-bottom: none;
-border-left: none;
-border-right: none;
-padding-top: 25px;
+#morelabel {
+  font-family: 'Times New Roman', Times, serif;
+  color: #2c3e50;
+  padding-left: 0px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-top: 25px;
 }
 
 #more-section {
@@ -29,49 +28,53 @@ padding-top: 25px;
 .info-section {
   display: flex;
   justify-content: space-between;
-  width: 80%; 
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .info-card {
   flex: 1;
-  margin: 0 15px; 
+  margin: 0 15px;
   text-align: center;
   padding-bottom: 20px;
-  border: none;
+  border: 1px solid #e0e0e0;
   border-radius: 15px;
-  background-color: rgba(52, 52, 52, 0.466);
-  transition: transform 0.3s ease; 
-  
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
+
 .info-card:hover {
-transform: scale(1.05); 
-background-color: #3a3a3aca;
+  transform: scale(1.05);
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .info-card img {
   max-width: 50px;
   height: auto;
   padding-top: 20px;
+
 }
 
 .info-card h3 {
   margin-top: 15px;
-  
+  color: #2c3e50;
 }
 
 .info-card p {
   padding: 10px;
   margin-bottom: 0px;
+  color: #555555;
 }
 
 .info-card button {
- font-size: 15px;
- margin-top: 10px;
+  font-size: 15px;
+  margin-top: 10px;
   padding: 10px 20px;
   border: none;
-  background-color: rgb(52, 52, 52);
+  background-color: #4CAF50;
   color: white;
   cursor: pointer;
   border-radius: 15px;
@@ -79,20 +82,15 @@ background-color: #3a3a3aca;
 }
 
 .info-card button:hover {
-  background-color: #555;
+  background-color: #3e8e41;
 }
 
-
-.branches{
+.branches {
   margin-top: 25px;
- padding-top: 25px;
- border: 1px solid #ccc;
- border-left: 0px;
- border-right: 0px;
- border-bottom: 0px;
- 
-
+  padding-top: 25px;
+  border-top: 1px solid #e0e0e0;
 }
+
 .branch-locations {
   width: 50%;
   display: flex;
@@ -100,8 +98,9 @@ background-color: #3a3a3aca;
   justify-content: space-between;
 }
 
-.branches img{
+.branches img {
   padding-bottom: 15px;
+ 
 }
 
 .branch {
@@ -110,12 +109,13 @@ background-color: #3a3a3aca;
 
 .branch h4 {
   margin-top: 0;
+  color: #2c3e50;
 }
-
 
 #faq h4 {
   text-align: center;
   font-size: smaller;
+  color: #666666;
 }
 
 #faq {

@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import JobSeekerSignup from './components/JobSeekerSignup';
 import JobSeekerLogin from './components/jobSeekerLogin';
 import JobSeekerHome from './components/Home';
-import JobLisitingPage from './components/JobList';
+import RecipeLisitingPage from './components/RecipeList';
 import RouteWrapper from './components/RouteWrapper';
-import JobDetailsPage from './components/JobDetails';
+import RecipeDetailsPage from './components/recipeDetails';
 import CommunityHomapage from './components/CommunityHomepage';
 import ApplyJob from './components/ApplyJob'; // Assuming you have a component for the application page
 import ApplicationTracker from './components/ApplicationTracker'; // Assuming you have a component for the application page
@@ -30,8 +30,8 @@ function App() {
         <Route path="/empdashboard" element={<EmployerDashboardPage />} />
         <Route path="/emplogin" element={<EmployerLogin />} />
         <Route path="/home" element={<JobSeekerHome />} />
-        <Route path="/list" element={<JobLisitingPage />} />
-        <Route path="/jobs/:jobId" element={<JobDetailsPage />} />
+        <Route path="/list" element={<RecipeLisitingPage  />} />
+        <Route path="/recipe/:recipeId" element={<RecipeDetailsPage />} />
         <Route path="/community" element={<CommunityHomapage />} />
         <Route path="/apply/:jobId" element={<ApplyJob />} />
         <Route path="/track" element={<ApplicationTracker />} />
@@ -39,10 +39,7 @@ function App() {
         <Route path="/resume" element={<ResumeUpload />} />
         <Route path="/receive" element={<Received />} />
         <Route path="/employer/jobs/create" element={<Create />} />
-        {/* Dynamic route for filtering jobs */}
-        <Route path="/list/:jobType" element={<JobLisitingPage />} />
-        {/* Route for all jobs */}
-        <Route path="/list" element={<JobLisitingPage />} />
+       
 
       </Routes>
       </RouteWrapper>

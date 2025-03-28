@@ -8,12 +8,13 @@ const jobRoutes = require('./routes/jobRoutes');
 const communityRoutes = require('./routes/communityRoutes');
 const applicationRoutes = require('./routes/applicationRoutes');
 const profileRoutes = require("./routes/profileRoutes");
-const latestJobsRoutes = require('./routes/latestJobsRoutes'); 
+const latestRecepeRoutes = require('./routes/latestRecepeRoutes'); 
 // Import your new routes
 const companyRoutes = require('./routes/companyRoutes');
 // Import your new event routes
 const eventRoutes = require('./routes/eventRoutes');
 const employerRoutes = require('./routes/employerRoutes');
+const RecipeRoutes = require('./routes/recipeRoutes');
 const app = express();
 const PORT = 5000;
 
@@ -58,8 +59,9 @@ app.use('/api/application', applicationRoutes);
 app.use('/api/community', communityRoutes); // Now uses `/api/community` path for community routes
 app.use("/api", profileRoutes);
 app.use("/api/employers", employerRoutes);
+app.use("/api/recipe", RecipeRoutes);
 // Routes
-app.use('/api/latest-jobs', latestJobsRoutes); // Use the latest jobs routes
+app.use('/api/latest', latestRecepeRoutes); // Use the latest jobs routes
 
 // In your backend (Express server)
 app.get('/api/job-seeker-id', (req, res) => {

@@ -54,15 +54,11 @@ const Footer = () => {
               <p>Contact: (94) 456-7890</p>
             </div>
 
-            <div className="branch other-branch">
-              <h4>Other Branch</h4>
-              <p>Address: 246 Main St, Colombo, Sri Lanka</p>
-              <p>Contact: (94) 765-4321</p>
-            </div>
+            
           </div>
 
           <div id="faq">
-            <h4>©2024 ABC Restaurant All Rights Reserved</h4>
+            <h4>©2025 TastyShare All Rights Reserved</h4>
           </div>
         </div>
       </section>

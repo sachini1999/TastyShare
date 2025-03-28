@@ -55,7 +55,7 @@ const JobSeekerLogin = () => {
     <img src={loginImage} alt="Login" />
   </div>
   <form onSubmit={handleSubmit} className="login-form">
-    <h2>JobConnect - Login</h2>
+    <h2>TastyShare - Login</h2>
 
     {/* Email Input */}
     <div className="floating-label-input">
